@@ -1,7 +1,7 @@
 # Can of Books Backend
 
 **Author**: Alexander Beers, Anotoine Charette, Ryan Emmans
-**Version**: 1.0.0
+**Version**: 1.1.0
 
 ## Overview
 Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. This app is used to track what books have impacted the user, and what's recommended to read next.
@@ -13,8 +13,8 @@ Books are life-changing. They have the power to enlighten, educate, entertain, h
 Node.js
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
+08-30-2021 2:45pm - Application now has a fully-functional express server, with a GET route for the book resource. 
 
 ## Estimates
 
@@ -22,11 +22,11 @@ Name of feature: Storage - Allow books that a user enters to persist
 
 Estimate of time needed to complete: 1hr
 
-Start time: _____
+Start time: 1:30
 
-Finish time: _____
+Finish time: 2:45
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr 15m
 
 ## Credit and Collaborations
 
@@ -47,6 +47,28 @@ Actual time needed to complete: _____
 * What is your plan if you start to fall behind?
 
   Prioritize features and precede as needed
+  
+  
+### *Cooperative*
+
+* Make a list of each parson’s strengths.
+  Antoine: Logical thinking
+  Ryan: 'Visual guy', frontend design
+  Alex: Problem solving, backend design
+
+* How can you best utilize these strengths in the development of your application?
+
+  Each person can take the lead in tasks that involve the strengths listed above
+
+* In what areas do you each want to develop greater strength?
+  Antoine: Frontend design, styling (UI, layout, etc)
+  Ryan: backend-development 
+  Alex: Frontend design, styling (UI, layout, etc)
+
+* Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development?
+
+  Meetings will be held at the beginning of each coding session to discuss that sessions tasks and priorities. Code reviews and educational disccusions will also be held. 
+
 
 ### *Conflict Resolution*
 
