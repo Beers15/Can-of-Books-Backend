@@ -1,7 +1,7 @@
 # Can of Books Backend
 
 **Author**: Alexander Beers, Anotoine Charette, Ryan Emmans
-**Version**: 1.3.1
+**Version**: 1.4.0
 
 ## Overview
 
@@ -19,6 +19,8 @@ Node.js
 08-30-2021 2:45pm - Application now has a fully-functional express server, with a GET route for the book resource.
 
 08-31-2021 2:00pm - Created POST route for /books which allows books to be added to the database.
+
+08-31-2021 4:30pm - Created DELETE route for /books which allows books to be deleted from the database.
 
 ## Estimates
 
@@ -41,6 +43,16 @@ Start time: 1:15
 Finish time: 2:00
 
 Actual time needed to complete: 45min
+
+Name of feature: Storage - Delete book from shelf, to keep book lists up to date
+
+Estimate of time needed to complete: 1hr
+
+Start time: 3:00pm
+
+Finish time: 4:30pm
+
+Actual time needed to complete: 1.5hrs
 
 ## Credit and Collaborations
 
