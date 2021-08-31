@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const getBooks = require('./services/getBooks');
+const addBook = require('./services/addBook');
 
 mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
@@ -15,9 +16,11 @@ db.once('open', function() {
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 const PORT = process.env.PORT || 3001;
 
 app.get('/books', getBooks);
+app.post('/books', addBook);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
