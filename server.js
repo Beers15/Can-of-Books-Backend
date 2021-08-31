@@ -6,6 +6,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const getBooks = require('./services/getBooks');
 const addBook = require('./services/addBook');
+const deleteBook = require('./services/deleteBook');
 
 mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
@@ -22,5 +23,6 @@ const PORT = process.env.PORT || 3001;
 
 app.get('/books', getBooks);
 app.post('/books', addBook);
+app.delete('/books/:id', deleteBook);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
