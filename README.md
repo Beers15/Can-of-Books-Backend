@@ -1,20 +1,24 @@
 # Can of Books Backend
 
 **Author**: Alexander Beers, Anotoine Charette, Ryan Emmans
-**Version**: 1.1.0
+**Version**: 1.3.1
 
 ## Overview
+
 Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. This app is used to track what books have impacted the user, and what's recommended to read next.
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
+
 Node.js
 
 ## Change Log
 
-08-30-2021 2:45pm - Application now has a fully-functional express server, with a GET route for the book resource. 
+08-30-2021 2:45pm - Application now has a fully-functional express server, with a GET route for the book resource.
+
+08-31-2021 2:00pm - Created POST route for /books which allows books to be added to the database.
 
 ## Estimates
 
@@ -27,6 +31,16 @@ Start time: 1:30
 Finish time: 2:45
 
 Actual time needed to complete: 1hr 15m
+
+Name of feature: Storage - Add a new book to shelf, to keep book lists up to date
+
+Estimate of time needed to complete: 1hr
+
+Start time: 1:15
+
+Finish time: 2:00
+
+Actual time needed to complete: 45min
 
 ## Credit and Collaborations
 
@@ -48,7 +62,6 @@ Actual time needed to complete: 1hr 15m
 
   Prioritize features and precede as needed
   
-  
 ### *Cooperative*
 
 * Make a list of each parson’s strengths.
@@ -69,7 +82,6 @@ Actual time needed to complete: 1hr 15m
 
   Meetings will be held at the beginning of each coding session to discuss that sessions tasks and priorities. Code reviews and educational disccusions will also be held. 
 
-
 ### *Conflict Resolution*
 
 * What will your team do if one person is pulling all the weight while the other person is not contributing?
@@ -82,4 +94,4 @@ Actual time needed to complete: 1hr 15m
 
 * How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?
 
- Engage in jolly cooperation and explain the code from each contribution that every member has made
+  Engage in jolly cooperation and explain the code from each contribution that every member has made
