@@ -26,6 +26,6 @@ const PORT = process.env.PORT || 3001;
 app.get('/books', getBooks);
 app.post('/books', addBook);
 app.delete('/books/:id', deleteBook);
-app.put('books/:id', updateBook);
+app.put('/books/:id', updateBook);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
