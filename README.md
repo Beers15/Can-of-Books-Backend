@@ -1,7 +1,7 @@
 # Can of Books Backend
 
 **Author**: Alexander Beers, Anotoine Charette, Ryan Emmans
-**Version**: 1.4.0
+**Version**: 1.5.1
 
 ## Overview
 
@@ -52,7 +52,17 @@ Start time: 3:00pm
 
 Finish time: 4:30pm
 
-Actual time needed to complete: 1.5hrs
+Actual time needed to complete: 1hr 30m
+
+Name of feature: Storage - Add POST /books to allow client to update DB with book updates
+
+Estimate of time needed to complete: 1hr
+
+Start time: 3:00pm, 5:00pm
+
+Finish time: 4:00pm 5:30pm
+
+Actual time needed to complete: 1hr 30m
 
 ## Credit and Collaborations
 

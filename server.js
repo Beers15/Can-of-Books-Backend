@@ -23,7 +23,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 3001;
 
 //books route
-app.get('/books', getBooks);
+app.get('/books/:user', getBooks);
 app.post('/books', addBook);
 app.delete('/books/:id', deleteBook);
 app.put('/books/:id', updateBook);
