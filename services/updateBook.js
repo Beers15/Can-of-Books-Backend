@@ -1,5 +1,5 @@
 const Book = require('../models/Book');
-const jwt = require('../helpers/jwt');
+const jwt = require('jsonwebtoken');
 const getKey = require('../helpers/jwt');
 
 function updateBook(req, res) {
