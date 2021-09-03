@@ -1,9 +1,9 @@
 'use strict';
 
 const jwksClient = require('jwks-rsa');
-
+// const domain = 'dev-y5ehm8nw.us.auth0.com';
 const client = jwksClient({
-  jwksUri: 'https://dev-4rwdhvtd.us.auth0.com/.well-known/jwks.json'
+  jwksUri: 'https://dev-4rwdhvtd.us.auth0.com/.well-known/jwks.json',
 });
 
 module.exports = (header, callback) => {

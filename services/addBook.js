@@ -1,6 +1,6 @@
 const Book = require('../models/Book');
 const jwt = require('jsonwebtoken');
-const getKey = require('../helpers/jwt');
+const getKey = require('../helpers/getKey');
 
 const addBook = (req, res) => {
   const token = req.headers.authorization.split(' ')[1];
@@ -9,9 +9,7 @@ const addBook = (req, res) => {
     if (err) {
       res.send('invalid token');
     } else {
-      const { name, email, description, status } = req.body;
-      const bookInfo = { name, email, description, status };
-      const newBook = await Book.create(bookInfo);
+      const newBook = await Book.create(req.body);
       res.status(201).send(newBook);
     }
   });
