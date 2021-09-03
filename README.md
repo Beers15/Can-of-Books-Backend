@@ -1,7 +1,7 @@
 # Can of Books Backend
 
 **Author**: Alexander Beers, Anotoine Charette, Ryan Emmans
-**Version**: 1.5.1
+**Version**: 2.0.3
 
 ## Overview
 
@@ -22,47 +22,46 @@ Node.js
 
 08-31-2021 4:30pm - Created DELETE route for /books which allows books to be deleted from the database.
 
+09-01-2021 8:00pm - Created PUT route for /books which allows the user to update book details.
+
+09-02-2021 7:00pm - Adds book images. Adds Auth0.
+
 ## Estimates
 
 Name of feature: Storage - Allow books that a user enters to persist
 
-Estimate of time needed to complete: 1hr
-
-Start time: 1:30
-
-Finish time: 2:45
-
-Actual time needed to complete: 1hr 15m
+- Estimate of time needed to complete: 1hr
+- Start time: 1:30
+- Finish time: 2:45
+- Actual time needed to complete: 1hr 15m
 
 Name of feature: Storage - Add a new book to shelf, to keep book lists up to date
 
-Estimate of time needed to complete: 1hr
-
-Start time: 1:15
-
-Finish time: 2:00
-
-Actual time needed to complete: 45min
+- Estimate of time needed to complete: 1hr
+- Start time: 1:15
+- Finish time: 2:00
+- Actual time needed to complete: 45min
 
 Name of feature: Storage - Delete book from shelf, to keep book lists up to date
 
-Estimate of time needed to complete: 1hr
+- Estimate of time needed to complete: 1hr
+- Start time: 3:00pm
+- Finish time: 4:30pm
+- Actual time needed to complete: 1hr 30m
 
-Start time: 3:00pm
+Name of feature: Storage - Add PUT /books to allow client to update DB with book updates
 
-Finish time: 4:30pm
+- Estimate of time needed to complete: 1hr
+- Start time: 3:00pm, 5:00pm
+- Finish time: 4:00pm 5:30pm
+- Actual time needed to complete: 1hr 30m
 
-Actual time needed to complete: 1hr 30m
+Name of feature: Auth0
 
-Name of feature: Storage - Add POST /books to allow client to update DB with book updates
-
-Estimate of time needed to complete: 1hr
-
-Start time: 3:00pm, 5:00pm
-
-Finish time: 4:00pm 5:30pm
-
-Actual time needed to complete: 1hr 30m
+- Estimate of time needed to complete: 4hrs
+- Start time: 3:00pm, 2:00pm
+- Finish time: 4:00pm 7:00pm
+- Actual time needed to complete: 5hrs
 
 ## Credit and Collaborations
 
