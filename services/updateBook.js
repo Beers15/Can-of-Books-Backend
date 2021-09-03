@@ -4,7 +4,7 @@ const getKey = require('../helpers/getKey');
 
 function updateBook(req, res) {
   const token = req.headers.authorization.split(' ')[1];
-
+  console.log(req.body);
   jwt.verify(token, getKey, {}, async (err) => {
     if (err) {
       res.send('invalid token');
@@ -18,15 +18,5 @@ function updateBook(req, res) {
     }
   });
 }
-
-// const updateBook = async (req, res) => {
-//   try {
-//     const updatedBook = await Book.findByIdAndUpdate(req.params.id, req.body, {new: true});
-//     res.status(201).send(updatedBook);
-//   } catch(err) {
-//     console.log(err);
-//     res.status(404).send(err);
-//   }
-// };
 
 module.exports = updateBook;
