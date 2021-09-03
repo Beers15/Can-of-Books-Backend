@@ -1,13 +1,30 @@
 const Book = require('../models/Book');
+const jwt = require('jsonwebtoken');
+const getKey = require('../helpers/getKey');
 
-const deleteBook = async (req, res) => {
-  try {
-    const deletedBook = await Book.findByIdAndDelete(req.params.id);
-    res.status(204).send(deletedBook);
-  } catch(err) {
-    console.log(err);
-    res.status(404).send(err);
-  }
+const deleteBook = (req, res) => {
+  const token = req.headers.authorization.split(' ')[1];
+
+  jwt.verify(token, getKey, {}, async (err) => {
+    if (err) {
+      res.send('invalid token');
+    } else {
+      const id = req.params.id;
+      const deletedBook = await Book.findByIdAndDelete(id);
+
+      res.status.status(204).send(deletedBook);
+    }
+  });
 };
+
+// const deleteBook = async (req, res) => {
+//   try {
+//     const deletedBook = await Book.findByIdAndDelete(req.params.id);
+//     res.status(204).send(deletedBook);
+//   } catch(err) {
+//     console.log(err);
+//     res.status(404).send(err);
+//   }
+// };
 
 module.exports = deleteBook;
