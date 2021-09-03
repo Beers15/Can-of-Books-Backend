@@ -4,7 +4,7 @@ const getKey = require('../helpers/getKey');
 
 const addBook = (req, res) => {
   const token = req.headers.authorization.split(' ')[1];
-  // verify that the jwt is valid
+  console.log(req.body);
   jwt.verify(token, getKey, {}, async (err) => {
     if (err) {
       res.send('invalid token');
@@ -14,15 +14,5 @@ const addBook = (req, res) => {
     }
   });
 };
-
-// const addBook = async (req, res) => {
-//   try {
-//     const newBook = await Book.create(req.body);
-//     res.status(201).send(newBook);
-//   } catch(err) {
-//     console.log(err);
-//     res.status(500).send(err);
-//   }
-// };
 
 module.exports = addBook;
